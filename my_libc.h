@@ -1,35 +1,9 @@
-BasedOnStyle: WebKit
-Language: Cpp
-IndentWidth: 8
-TabWidth: 8
-UseTab: Always
-ContinuationIndentWidth: 4
-ColumnLimit: 80
-BreakBeforeBraces: WebKit
-AlwaysBreakAfterReturnType: TopLevelDefinitions
-AllowShortFunctionsOnASingleLine: None
-AllowShortBlocksOnASingleLine: Never
-AllowShortIfStatementsOnASingleLine: Never
-AllowShortLoopsOnASingleLine: false
-AllowShortCaseLabelsOnASingleLine: false
-IndentCaseLabels: false
-SpaceBeforeParens: ControlStatements
-SpaceAfterCStyleCast: false
-PointerAlignment: Right
-DerivePointerAlignment: false
-AlignAfterOpenBracket: DontAlign
-AlignOperands: false
-AlignTrailingComments: true
-AlignConsecutiveAssignments: false
-AlignConsecutiveDeclarations: false
-AlignEscapedNewlines: Left
-AllowAllArgumentsOnNextLine: false
-AllowAllParametersOfDeclarationOnNextLine: false
-BinPackArguments: true
-BinPackParameters: true
-BreakBeforeBinaryOperators: None
-BreakBeforeTernaryOperators: false
-BreakStringLiterals: false
-KeepEmptyLinesAtTheStartOfBlocks: false
-IndentPPDirectives: None
-SortIncludes: Never
+#ifndef MY_LIBC_H
+#define MY_LIBC_H
+
+#include <stddef.h>
+
+size_t
+my_strlen(const char *s);
+
+#endif
